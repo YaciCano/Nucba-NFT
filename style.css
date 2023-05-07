@@ -1,0 +1,76 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+:root {
+    /* bg colors */
+    --background: black;
+    --primary:blue;
+    --secondary: #272d37;
+    --btn-bg: black;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg:#0f1525;
+    /* text color */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+    /* decoration */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+}
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "comic neue", sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+
+}
+header {
+    background: var(--secondary);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px 0px 30px;
+}
+
+.logo {
+    height: 40%;
+}
+
+.navbar,
+.navbar-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150%;
+}
+.navbar-list {
+gap: 30px;
+}
+
+.navbar-list a {
+   color: var(--text-gray);
+   font-size: 16px;
+}
+
+.navbar-list li:first-child > a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.cart-icon {
+   font-weight: 600;
+   border-radius: 10px;
+   height: 30px; 
+   padding: 5px 20px;
+   margin-right: 2rem ;
+   color: var(--text-white);
+   cursor: pointer;
+}
