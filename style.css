@@ -3,7 +3,7 @@
 
 :root {
     /* bg colors */
-    --background: black;
+    --background: rgb(3, 3, 3);
     --primary:blue;
     --secondary: #272d37;
     --btn-bg: black;
@@ -26,6 +26,7 @@
     text-decoration: none;
     list-style-type: none;
 
+   /* Header*/ 
 }
 header {
     background: var(--secondary);
@@ -74,3 +75,149 @@ gap: 30px;
    color: var(--text-white);
    cursor: pointer;
 }
+
+/* Main*/
+
+main {
+   background: var(--background);
+   display: flex ;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   width: 100%;
+   height: 100%;
+   border: 1px;
+}
+
+/* Hero */
+#hero{
+    margin-top: 65px;
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.hero-info p {
+    font: size 14px; 
+    width: 70%;
+    color: var(--text-gray);
+}
+
+.hero-info a {
+    color: var(--text-white);
+    background-color: var(--primary);
+    width: 120px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-card {
+    width: 300px;
+    background: var(--secondary);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.hero-card-top h3 {
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero-card-top span {
+    background-color: var(--primary);
+    text-align: center;
+    width: 50px;
+    padding: 3px 0px;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.hero-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-card-creator {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-card-creator-info p {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.hero-card-creator img {
+    height: 40px;
+    width: 40px;
+}
+
+.hero-card-price {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-card-price value {
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero-card-price span {
+    text-align: center;
+    padding: 3px 0px;
+    font-size: 14px;
+}
+
+
+
+
+
+
